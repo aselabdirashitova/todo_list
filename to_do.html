@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="to_do.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>My Tasks</h1>
+            <p>Планируй. Делай. Готово.</p>
+        </div>
+
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Что нужно сделать?">
+            <button id="addButton">+</button>
+
+            <select id="priority">
+                <option value="low">🟢 Не срочно</option>
+                <option value="medium">🟡 Обычно</option>
+                <option value="high">🔴 Важно</option>
+            </select>
+
+            <input type="date" id="taskDate">
+
+            <button id="addButton">+</button>
+
+        </div>
+        <div class="stats">
+            <span>Всего: <b id="totalTasks">0</b></span>
+            <span>Выполнено: <b id="completedTasks">0</b></span>
+        </div>
+        <button id="deleteCompleted" class="clear-button">
+            🧹 Удалить выполненные
+        </button>
+
+        <div id="emptyText" class="empty">
+            Список задач пустой
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="to_do.js"></script>
+</body>
+
+</html>
